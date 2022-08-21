@@ -1,0 +1,96 @@
+.sellerBox-mobile {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .sellerBox-mobile {
+    display: block;
+  }
+  .sellerBox-mobile .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    background: transparent
+      linear-gradient(270deg, rgba(187, 58, 191, 0.2), #fff) 0 0 no-repeat
+      padding-box;
+    padding: 15px 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #333;
+  }
+  .sellerBox-mobile .header .icon {
+    color: rgb(170, 5, 176);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+  }
+  .sellerBox-mobile .seller {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem;
+  }
+  .sellerBox-mobile .seller span {
+    color: #555;
+  }
+  .sellerBox-mobile .score-and-application {
+    width: 99%;
+    border-bottom: 1px solid rgba(233, 233, 233, 0.8);
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .sellerBox-mobile .score-and-application .score,
+  .sellerBox-mobile .score-and-application .application {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sellerBox-mobile .score-and-application .score {
+    border-left: 1px solid rgba(233, 233, 233, 0.8);
+  }
+  .sellerBox-mobile .score-and-application .score span {
+    color: var(--btn1-color);
+    margin: 0 3px;
+  }
+  .sellerBox-mobile .score-and-application .score span i {
+    margin: 0 3px;
+  }
+  .sellerBox-mobile .score-and-application .application span {
+    color: var(--btn2-color);
+    margin: 0 8px;
+  }
+  .sellerBox-mobile .Warranty {
+    display: flex;
+    margin: 5px 0px;
+    border-bottom: 1px solid rgba(233, 233, 233, 0.8);
+    padding: 10px 5px;
+    align-items: center;
+  }
+  .sellerBox-mobile .Warranty h4 {
+    margin: 0 8px;
+    color: #555;
+  }
+  .sellerBox-mobile .store-and-send {
+    border-bottom: 1px solid rgba(233, 233, 233, 0.8);
+    padding: 10px 5px;
+  }
+  .sellerBox-mobile .store-and-send .store,
+  .sellerBox-mobile .store-and-send .send {
+    display: flex;
+    align-items: center;
+  }
+  .sellerBox-mobile .store-and-send .store h4,
+  .sellerBox-mobile .store-and-send .send h4 {
+    color: #555;
+    margin: 0 8px;
+  }
+  .sellerBox-mobile .store-and-send .send h4 {
+    font-size: 13px;
+    color: #555;
+  }
+}

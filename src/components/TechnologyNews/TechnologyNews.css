@@ -1,0 +1,120 @@
+.TechnologyNews-section {
+  margin: 20px auto;
+  width: 93%;
+  height: 400px;
+}
+.TechnologyNews-section h2 {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  height: 40px;
+  text-align: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+.TechnologyNews-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 300px;
+}
+.TechnologyNews-part .img-container {
+  width: 300px;
+  height: 275px;
+  /* background-color: red; */
+  position: relative;
+}
+.TechnologyNews-part img {
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+.TechnologyNews-part img:hover {
+  transform: translateY(-10px);
+}
+.TechnologyNews-part .img-container .coverOfImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    0deg,
+    #292929,
+    #2d2d2d 4%,
+    #2d2525 13%,
+    rgba(61, 54, 54, 0.03125) 54%
+  );
+}
+.TechnologyNews-part .img-container .TitleCoverOf-img {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 10px;
+  right: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.TechnologyNews-part {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+}
+.TechnologyNews-part .img-container {
+  margin: 0 20px;
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  .TechnologyNews-part .img-container {
+    width: 250px;
+    height: 250px;
+  }
+  .TechnologyNews-section {
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .TechnologyNews-part .img-container {
+    width: 200px;
+    height: 200px;
+  }
+  .TechnologyNews-section {
+    height: 300px;
+  }
+  .TechnologyNews-part .img-container .TitleCoverOf-img {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .TechnologyNews-section {
+    margin: 10px auto;
+  }
+
+  .TechnologyNews-part::-webkit-scrollbar {
+    width: 0px;
+  }
+  .TechnologyNews-part .img-container {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .TechnologyNews-part .img-container {
+    width: 250px;
+    height: 220px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .TechnologyNews-part .img-container {
+    width: 280px;
+    height: 250px;
+  }
+}

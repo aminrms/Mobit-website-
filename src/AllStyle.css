@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: YekanBakhHeavy;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap');
+@font-face {
+    font-family:iranyekanwebmedium ;
+    src: url('../src/Fonts/iranyekanwebmedium.woff');
+}
+@font-face {
+    font-family:iranyekanwebregular ;
+    src: url("../src/Fonts/iranyekanwebregular.woff");
+}
+@font-face {
+    font-family: YekanBakhBold;
+    src: url('../src/Fonts/YekanBakhBold.woff');
+}
+@font-face {
+    font-family: YekanBakhHeavy;
+    src: url("../src/Fonts/YekanBakhHeavy.woff");
+}
+@font-face {
+    font-family: YekanBakhMedium;
+    src: url("../src/Fonts/YekanBakhMedium.woff");
+}

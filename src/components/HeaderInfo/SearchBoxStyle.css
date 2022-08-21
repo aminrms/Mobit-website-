@@ -1,0 +1,69 @@
+.searchBox {
+  position: relative;
+}
+.searchBox .skeleton-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.searchBox .search-container .detail {
+  width: 100%;
+  height: fit-content;
+}
+.searchBox .searched-box {
+  width: 100%;
+  position: absolute;
+  height: 0;
+  top: 40px;
+  background-color: rgba(237, 237, 237, 0.8);
+  z-index: 1;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transition: height 0.3s ease-in-out;
+  overflow: auto;
+}
+.searchBox .searched-box.open {
+  height: 250px;
+}
+.searchBox .searched-box::-webkit-scrollbar {
+  width: 0;
+}
+.searchBox .search-container {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(237, 237, 237, 0.8);
+  border-radius: 14px;
+  padding: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.searchBox .searchIcon {
+  height: 60%;
+  padding: 0 10px;
+  border-left: 2px solid rgb(207, 207, 207);
+  cursor: pointer;
+}
+.searchBox i {
+  font-size: 20px;
+}
+.searchBox input {
+  border: none;
+  background: none;
+  height: 90%;
+  width: 100%;
+  outline: none;
+  padding: 5px 10px;
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+}
+.searchBox input:focus {
+  pointer-events: none;
+}
+@media (max-width: 1024px) {
+  .searchBox {
+    width: 95%;
+    margin: 5px auto;
+  }
+}

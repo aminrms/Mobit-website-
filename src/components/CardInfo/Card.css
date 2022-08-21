@@ -1,0 +1,141 @@
+.Card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 370px;
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.25s ease-in-out;
+  margin: 0px 5px;
+  /* width:100%; */
+  /* background-color:red; */
+  text-decoration: none;
+}
+.Card:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.Card .card-media {
+  background-color: rgba(240, 240, 240, 0.8);
+  width: 95%;
+  border-radius: 15px;
+  padding: 100px 10px;
+  height: 52%;
+  position: relative;
+}
+.Card .card-media img {
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+}
+.Card .discount {
+  width: 50px;
+  height: 20px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: rgb(233, 43, 43);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.Card .card-media .discount {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  width: 50px;
+  height: auto;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(233, 43, 43);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.Card .detail {
+  height: 45%;
+  width: 100%;
+}
+.Card .detail .card-title {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-bottom: 3px solid rgb(223, 223, 223); */
+  text-align: justify;
+  padding: 0 15px;
+}
+.Card .detail .card-title h6 a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: rgb(81, 81, 81);
+  transition: 0.3s ease-in-out;
+  font-weight: 400;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.Card:hover .detail .card-title h6 a {
+  color: #0063cc;
+}
+.Card .detail .price-discount-addToChart-like {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  direction: rtl;
+  height: 50%;
+  padding: 0 5px;
+}
+.Card .addTo-Chart-like span {
+  margin: 0 3px;
+}
+.Card .addTo-Chart-like i {
+  font-size: 22px;
+  color: #333;
+  cursor: pointer;
+}
+.Card .price-discount {
+  display: flex;
+  flex-direction: column;
+}
+.Card .price-discount del {
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 14px;
+}
+.Card .price-discount .price {
+  color: #333;
+  margin: 5px 3px;
+}
+.Card .price-discount .price {
+  font-size: 17px;
+}
+@media (max-width: 768px) {
+  .Card {
+    height: 270px;
+  }
+  .Card .card-media {
+    height: 40%;
+    /* background-color:red; */
+    padding: 70px 5px;
+  }
+  .Card .card-media img {
+    object-fit: contain;
+    width: 65%;
+    height: 65%;
+  }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  .Card .card-media img {
+    object-fit: contain;
+    width: 80%;
+    height: 80%;
+  }
+}

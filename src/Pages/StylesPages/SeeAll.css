@@ -1,0 +1,249 @@
+.SeeAll-Section {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
+  width: 95%;
+  min-height: 100vh;
+  /* background-color: red; */
+  margin: 20px auto;
+  position: relative;
+}
+.SeeAll-Section .search-section {
+  height: fit-content;
+}
+.SeeAll-Section .search-box {
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(240, 240, 240, 0.8);
+  border-radius: 15px;
+  align-items: center;
+  padding: 20px 5px;
+}
+.SeeAll-Section .search-box h3 {
+  margin-bottom: 8px;
+  padding: 0 5px;
+}
+.SeeAll-Section .search-box input {
+  width: 97%;
+  border: 2px solid rgb(225, 225, 225);
+  outline: none;
+  border-radius: 9px;
+  background-color: inherit;
+  margin: 5px 3px;
+  padding: 10px 8px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+}
+.SeeAll-Section .customization-box {
+  width: 100%;
+  background-color: rgba(240, 240, 240, 0.8);
+  height: fit-content;
+  border-radius: 15px;
+  margin: 10px 0;
+  padding: 10px 5px;
+}
+.SeeAll-Section .customization-box .available-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 5px;
+  border-bottom: 2px solid rgba(230, 230, 230, 0.8);
+}
+.SeeAll-Section .customization-box h4 {
+  font-size: 17px;
+  color: #333;
+}
+.SeeAll-Section .customization-box .available-products .switch-container {
+  width: 50px;
+  height: 25px;
+  background-color: rgba(220, 220, 220, 0.8);
+  /* box-shadow: rgba(145, 145, 145, 0.25) 0px 30px 60px -12px inset,
+    rgba(102, 102, 102, 0.3) 0px 18px 36px -18px inset; */
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.SeeAll-Section
+  .customization-box
+  .available-products
+  .switch-container.active {
+  background-color: var(--btn2-color);
+}
+.SeeAll-Section
+  .customization-box
+  .available-products
+  .switch-container.active
+  span {
+  right: 27px;
+}
+.SeeAll-Section .customization-box .available-products .switch-container span {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px, rgba(0, 0, 0, 0.22) 0px 0px 5px;
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: absolute;
+  right: 2.2px;
+  bottom: 2.5px;
+}
+.SeeAll-Section .customization-box .Price-range {
+  width: 100%;
+  padding: 10px 5px;
+  border-bottom: 2px solid rgba(230, 230, 230, 0.8);
+}
+.SeeAll-Section .customization-box .Price-range .apply-price-range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+.SeeAll-Section .customization-box .Price-range .apply-price-range span {
+  font-size: 14px;
+  color: #444;
+  margin: 0 3px;
+}
+.SeeAll-Section .apply-price-range .input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: inherit;
+  border: 2px solid rgb(225, 225, 225);
+  height: 40px;
+  padding: 0 5px;
+  border-radius: 9px;
+  margin: 0 2px;
+}
+.SeeAll-Section .apply-price-range .input-container input[type="text"] {
+  outline: none;
+  border-radius: 9px;
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.SeeAll-Section .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+}
+.SeeAll-Section .button-container button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  padding: 8px 5px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid var(--btn2-color);
+  font-size: 16px;
+  color: var(--btn2-color);
+  cursor: pointer;
+}
+.SeeAll-Section .button-container button:focus {
+  width: 99%;
+  background-color: var(--btn2-color);
+  color: white;
+}
+
+.SeeAll-Section .products-section {
+  width: 98%;
+}
+.SeeAll-Section .products-section .products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  width: 100%;
+  justify-items: center;
+}
+.SeeAll-Section .products-section .products .Card-container {
+  width: 100%;
+}
+.SeeAll-Section .products-section .products .Card-container .Card {
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .SeeAll-Section .search-section {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .SeeAll-Section {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1024px) {
+  .SeeAll-Section .products-section .products .Card {
+    width: 100%;
+    flex-direction: row;
+    height: 100%;
+    /* background-color: red */
+    border-bottom: 1px solid rgb(219, 219, 219);
+    border-radius: 0;
+    padding: 10px 5px;
+    height: 200px;
+  }
+  .SeeAll-Section .products .Card .card-media {
+    height: 70%;
+    padding: 5px;
+    margin: 0 5px;
+    width: 25%;
+  }
+  .SeeAll-Section .products .Card .card-media img {
+    width: 95%;
+    height: 95%;
+  }
+  .SeeAll-Section .products .Card .detail {
+    height: 100%;
+    width: 75%;
+  }
+  .SeeAll-Section .products .Card .detail .card-title {
+    border-bottom: none;
+    height: 60%;
+    padding: 20px 5px;
+  }
+  .SeeAll-Section .products .Card .detail .price-discount-addToChart-like {
+    height: 40%;
+    padding:5px 0;
+    /* background-color:red */
+  }
+}
+@media (max-width: 768px) {
+  .SeeAll-Section .products .Card .detail .card-title h6 a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .SeeAll-Section .products-section .products {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+@media (min-width: 700px) and (max-width: 769px) {
+  .SeeAll-Section .products-section .products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .SeeAll-Section .products-section .products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 991px) and (max-width: 1024px) {
+  .SeeAll-Section .products-section .products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

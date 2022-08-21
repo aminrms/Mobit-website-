@@ -1,0 +1,189 @@
+.Slider-section {
+  width: 90%;
+  margin: 5px auto;
+  height: fit-content;
+  padding:5px;
+  border-radius: 8px;
+  /* overflow: hidden; */
+  text-align: center;
+  /* background-color: red; */
+}
+.Slider-section .mySwiperSlider {
+  height: min-content;
+  padding: 15px 0px;
+  overflow: hidden;
+}
+.Slider-section .header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 15px;
+  margin: 5px auto;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+}
+.Slider-section .header-section h1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.Slider-section .header-section a {
+  text-decoration: none;
+  color: #0063cc;
+  font-size: 17.5px;
+}
+.Slider-section .slider {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.Slider-section .Slide {
+  border-radius: 8px;
+  position: relative;
+  width: 300px;
+}
+.Slider-section .Slide .box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 370px;
+  padding: 5px;
+  border-radius: 12px;
+  transition: all 0.4s ease-in-out;
+  margin: 0px 0;
+}
+.Slider-section .Slide .box .img-box {
+  background-color: rgba(228, 228, 228, 0.8);
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 5px;
+  height: 55%;
+  position: relative;
+}
+.Slider-section .Slide .box .img-box img {
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Slider-section .Slide .box .img-box .reduce {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  width: 50px;
+  height: 20px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: rgb(233, 43, 43);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Slider-section .Slide .box .detail {
+  height: 45%;
+  width: 100%;
+}
+.Slider-section .Slide .box .detail .card-title {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(186, 186, 186);
+}
+.Slider-section .Slide .box .detail .card-title h6 a {
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s ease-in-out;
+}
+.Slider-section .Slide .box:hover .detail .card-title h6 a {
+  color: #0063cc;
+}
+.Slider-section .Slide .box .detail .price-discount-addToChart-like {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  direction: rtl;
+  height: 50%;
+  padding: 0 5px;
+}
+.Slider-section .Slide .box .addTo-Chart-like span {
+  margin: 0 3px;
+}
+.Slider-section .Slide .box .addTo-Chart-like i {
+  font-size: 19px;
+  color: #333;
+  cursor: pointer;
+}
+.Slider-section .Slide .box .price-discount {
+  display: flex;
+  flex-direction: column;
+}
+.Slider-section .Slide .box .price-discount del span {
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 14px;
+}
+.Slider-section .Slide .box .price-discount span {
+  color: rgb(72, 72, 72);
+  margin: 0 3px;
+}
+.Slider-section .Slide .box .price-discount .price {
+  font-size: 17px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+  position: absolute;
+  font-size: 16px !important;
+  background-color: #fff;
+  color: rgb(96, 96, 96) !important;
+  padding: 7px 11px !important;
+  border-radius: 8px !important;
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+  text-align: center !important;
+  font-weight: bold !important;
+}
+@media (min-width: 280px) and (max-width: 410px) {
+  .Slider-section .Slide .box .title-box h5 {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Slider-section {
+    width: 95%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: #444;
+    display: none;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: "";
+    position: absolute;
+    color: #fff;
+  }
+  .Slider-section .header-section {
+    height: 50px;
+  }
+  .Slider-section .header-section h1 {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .Slider-section .header-section a {
+    text-decoration: none;
+    color: #0063cc;
+    font-size: 14px;
+  }
+  .Slider-section .Slide .box .img-box img {
+    object-fit: contain;
+    width: 80%;
+    height: 80%;
+  }
+}

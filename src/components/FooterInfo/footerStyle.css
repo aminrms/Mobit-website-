@@ -1,0 +1,412 @@
+footer {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 50px;
+  /* background-color: red; */
+}
+footer .support-and-moreInformation-of-web {
+  width: 100%;
+  background-color: rgba(240, 240, 240, 0.8);
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: fit-content;
+  align-items: center;
+  border-radius: 12px;
+  padding: 20px 25px;
+  position: relative;
+}
+footer .support-and-moreInformation-of-web .support-part h4 {
+  color: rgb(87, 87, 87);
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+footer .support-and-moreInformation-of-web .title {
+  font-size: 16px;
+  margin: 0 5px;
+  color: rgb(59, 59, 59);
+}
+footer .support-and-moreInformation-of-web .phone-and-day {
+  margin-bottom: 20px;
+  display: flex;
+}
+footer .support-and-moreInformation-of-web .phone {
+  padding: 0 10px;
+  border-left: 1px solid #999;
+  margin: 0 5px;
+}
+footer .support-and-moreInformation-of-web .emailLink {
+  font-weight: bold;
+}
+footer .moreInformation-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .moreInformation-part .img-box {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-decoration: none;
+  /* background-color:red */
+}
+footer .moreInformation-part .img-box img {
+  width: 80%;
+  height: 80%;
+}
+footer .moreInformation-part .img-box span {
+  margin: 5px 0;
+  color: #333;
+}
+footer .support-and-moreInformation-of-web .moveToUp {
+  position: absolute;
+  background-color: inherit;
+  top: -20px;
+  left: 50%;
+  padding: 8px 0;
+  width: 140px;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+footer .support-and-moreInformation-of-web .moveToUp i {
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  opacity: 0.8;
+}
+
+footer .links-webSite-and-socialMedias {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 100%;
+  height: fit-content;
+  padding: 20px 25px;
+  margin: auto;
+}
+footer .links-webSite-and-socialMedias ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  height: fit-content;
+}
+footer .links-webSite-and-socialMedias ul li h4 {
+  margin-bottom: 10px;
+}
+footer .links-webSite-and-socialMedias ul li a {
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 13px;
+  color: rgb(116, 116, 116);
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+footer .links-webSite-and-socialMedias ul li a:hover {
+  color: var(--btn2-color);
+}
+footer .socialMedias-and-contactWithUs .socialMedias {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .socialMedias-and-contactWith .socialMedias img {
+  color: rgb(215, 5, 5);
+}
+footer
+  .socialMedias-and-contactWithUs
+  .contactWithUs
+  .submit-email
+  input[type="text"] {
+  width: 100%;
+  outline: none;
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(242, 242, 242, 0.8);
+  margin-top: 20px;
+}
+footer
+  .socialMedias-and-contactWithUs
+  .contactWithUs
+  .submit-email
+  .button-container {
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  padding: 0 10px;
+}
+footer
+  .socialMedias-and-contactWithUs
+  .contactWithUs
+  .submit-email
+  .button-container
+  button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--btn2-color);
+  width: 130px;
+  height: 38px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+footer
+  .socialMedias-and-contactWithUs
+  .contactWithUs
+  .submit-email
+  .button-container
+  button:hover {
+  background-color: rgb(62, 96, 252);
+}
+footer .linksDownload-MobitApp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: 10px 10px;
+  border-radius: 15px;
+  height: fit-content;
+  background-color: rgba(238, 238, 238, 0.8);
+}
+footer .linksDownload-MobitApp .performanceBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .linksDownload-MobitApp .performanceBox .img-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+footer .linksDownload-MobitApp .performanceBox .img-box img {
+  width: 100%;
+  height: 100%;
+}
+footer .linksDownload-MobitApp .performanceBox h2 {
+  align-items: center;
+  padding: 0 20px;
+  color: var(--btn2-color);
+}
+footer .linksDownload-MobitApp .download-links-more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .linksDownload-MobitApp .download-links-more a {
+  width: 140px;
+  display: flex;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  background-color: white !important;
+  border-radius: 12px;
+  margin: 5px 2px;
+}
+footer .linksDownload-MobitApp .download-links-more a img {
+  width: 80%;
+  height: 80%;
+}
+footer .linksDownload-MobitApp .download-links-more a:nth-child(4) {
+  text-decoration: none;
+  color: #333;
+}
+footer .License-and-moreInformation {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  border-bottom: 2px solid #eee;
+  padding: 20px 0;
+  margin: auto;
+  width: 100%;
+}
+footer .License-and-moreInformation .moreInformation {
+  width: 100%;
+}
+footer .License-and-moreInformation h3 {
+  margin: 10px 0;
+}
+footer .License-and-moreInformation .paragraph {
+  overflow: hidden;
+  line-height: 28px;
+  font-weight: 300;
+  color: rgb(80, 80, 80);
+  font-size: 13px;
+  width: 74%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+footer .License-and-moreInformation .paragraph.active {
+  -webkit-line-clamp: inherit;
+}
+footer .License-and-moreInformation .button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer .License-and-moreInformation .button-container .more-pBtn {
+  border: none;
+  width: 120px;
+  height: 30px;
+  padding: 8px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+  color: var(--btn2-color);
+  font-size: 15px;
+}
+footer .License-and-moreInformation .button-container .more-pBtn i {
+  font-size: 18px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .License-and-moreInformation .License {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+footer .License-and-moreInformation .License .img-box {
+  width: 110px;
+  height: 110px;
+  margin: 0 5px;
+}
+footer .License-and-moreInformation .License .img-box img {
+  width: 100%;
+  height: 100%;
+}
+footer .end-partOfFooter {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  /* background-color:red; */
+}
+footer .end-partOfFooter p {
+  color: #333;
+  font-size: 14px;
+}
+footer .end-partOfFooter a {
+  text-decoration: none;
+  color: rgb(31, 137, 82);
+}
+@media (max-width: 550px) {
+  footer .support-and-moreInformation-of-web {
+    height: fit-content;
+  }
+  footer .support-and-moreInformation-of-web .support-part {
+    border-bottom: 2px solid rgb(232, 232, 232);
+    padding: 10px 0;
+  }
+  footer .support-and-moreInformation-of-web h4 {
+    margin-top: 10px;
+  }
+  footer .support-and-moreInformation-of-web .title,
+  footer .support-and-moreInformation-of-web .phone-and-day,
+  footer .support-and-moreInformation-of-web .phone,
+  footer .support-and-moreInformation-of-web .emailLink {
+    font-size: 13px;
+  }
+  footer .support-and-moreInformation-of-web .phone-and-day {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  footer .support-and-moreInformation-of-web .phone {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  footer .moreInformation-part .img-box {
+    height: 130px;
+    /* background-color:red; */
+  }
+  footer .moreInformation-part .img-box img {
+    width: 75%;
+    height: 75%;
+  }
+  footer .linksDownload-MobitApp .performanceBox h2 {
+    font-size: 18px;
+  }
+  footer .linksDownload-MobitApp .download-links-more a {
+    width: 120px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    padding-bottom: 80px;
+  }
+  footer .License-and-moreInformation .moreInformation h3{
+    font-size: 15.5px;
+  }
+}
+@media (max-width: 1100px) {
+  footer .support-and-moreInformation-of-web {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
+  footer .links-webSite-and-socialMedias {
+    grid-template-columns: 1fr;
+  }
+  footer .linksDownload-MobitApp {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+  footer .links-webSite-and-socialMedias ul li {
+    width: 170px;
+    height: fit-content;
+  }
+  footer .License-and-moreInformation {
+    grid-template-columns: 1fr;
+  }
+  footer .License-and-moreInformation .paragraph {
+    width: 100%;
+  }
+  footer .License-and-moreInformation .License {
+    justify-content: space-around;
+    margin-top:10px;
+  }
+  footer .License-and-moreInformation .License .img-box {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 1100px) {
+  
+}
