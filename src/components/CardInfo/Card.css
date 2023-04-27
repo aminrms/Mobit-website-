@@ -4,12 +4,13 @@
   flex-direction: column;
   height: 370px;
   padding: 5px;
-  border-radius: 15px;
+  border-radius: 18px;
   transition: all 0.25s ease-in-out;
   margin: 0px 5px;
   /* width:100%; */
   /* background-color:red; */
   text-decoration: none;
+  
 }
 .Card:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
